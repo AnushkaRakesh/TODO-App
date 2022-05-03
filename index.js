@@ -35,7 +35,8 @@ function showTodo(filter){
                           </div>
 
                     </li>`;
-                    count.textContent='Total Count : '+todos.length;
+                const len=todos.length; 
+                    count.textContent='Total Count : '+len;
             }    
         });
     }
