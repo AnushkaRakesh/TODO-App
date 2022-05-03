@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3c87ff;
+
+}
+.container{
+    width: 75%;
+    background: #fff;
+    border-radius: 7px;
+    padding-bottom: 10px;
+}
+.filters span{
+    cursor: pointer;
+    margin: 0 8px; 
+    font-size: 17px;
+}
+.filters span.active{
+    color:#3c87ff;
+}
+.filters span:first-child{
+    margin-left: 0;
+}
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+}
+.task label p.checked{
+    text-decoration: line-through;
+}
+ul{
+    padding-left: 0px;
+}
+#para{
+    width:20rem;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    color: grey;
+   
+}
+
+@media only screen and (max-width: 756px){
+    .wrapper{
+        width: 100%;
+    }
+    #para{
+        width:10rem;
+        overflow-wrap: break-word;
+    }
+    .form-control{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 420px){
+    
+    
+    #input-div{
+        display: flex;
+        flex-wrap: wrap;
+
+    }   
+    #input-div a{
+        width: 98%;
+        margin-top:10px;
+    }
+    #para{
+        width:5rem;
+        overflow-wrap: break-word;
+    }
+}
